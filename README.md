@@ -18,3 +18,11 @@ The plugin when activated does the following, if a block theme is active:
 - Customizes the post editor for format posting by presenting a default template
   per format type and hiding the title input (via CSS).
 - Uses format name as title in WP admin for title-less posts
+
+## Demo
+
+
+https://github.com/draganescu/wp-format-enabler/assets/107534/02d6bda7-cf46-44da-94ff-a0c60e8f776f
+
+
+
