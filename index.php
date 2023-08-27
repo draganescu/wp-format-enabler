@@ -170,12 +170,18 @@ function block_theme_post_format_post_template(  $block_content ) {
 		return $block_content;
 	}
 
+	$blocks = parse_blocks($post->post_content);
+	$content = '';
+	foreach ($blocks as $block) {
+		$content .= render_block( $block );
+	}
+
 	$format_classes = implode( ' ', array(
 		'wp-format-enabler',
 		'is-' . $format
 	) );
 	return '<div class="'. $format_classes .'">'
-		 . $post->post_content . '
+		 . $content . '
 		<a href="'. $permalink . '">'. __( 'Read more' ) .'</a>
 	</div>';
 }
